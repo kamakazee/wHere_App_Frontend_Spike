@@ -1,8 +1,7 @@
 import './App.css';
 import './image.css';
 import Header from './components/Header';
-import ImageGallery from './components/ImageGallery';
-import ImageUpload from './components/ImageUpload';
+import Home from './components/Home';
 import { useState } from 'react';
 
 function App() {
@@ -15,8 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header user={user} setUser={setUser} />
-      <ImageUpload />
-      <ImageGallery/>
+      <Home user={user} />
     </div>
   );
 }
